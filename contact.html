@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Test Drive | Euro Motors</title>
+    <meta name="description" content="Schedule your exclusive test drive with Euro Motors." />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+      /* Additional styles strictly for the contact page */
+      .contact-page {
+        min-height: 100vh;
+        background-image: url('./assets/showcase-BaNcW2LY.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 80px;
+        display: flex;
+        align-items: center;
+      }
+      .contact-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(255,255,255,0.7);
+      }
+      .form-container {
+        position: relative;
+        z-index: 10;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem;
+        border-radius: var(--card-radius);
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 3rem;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .form-group.full-width {
+        grid-column: 1 / -1;
+      }
+      .form-label {
+        font-family: var(--font-heading);
+        font-size: 0.85rem;
+        color: var(--color-text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .form-input {
+        background: rgba(0, 0, 0, 0.03);
+        border: 1px solid var(--color-glass-border);
+        padding: 1rem 1.2rem;
+        border-radius: 8px;
+        color: var(--color-text-primary);
+        font-family: var(--font-body);
+        font-size: 1rem;
+        transition: var(--transition-smooth);
+        outline: none;
+      }
+      .form-input:focus {
+        border-color: var(--color-accent-gold);
+        background: rgba(0, 0, 0, 0.05);
+      }
+      select.form-input option {
+        background: var(--color-bg-elevated);
+        color: var(--color-text-primary);
+      }
+      .contact-header {
+        text-align: center;
+      }
+      .contact-header h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        margin-bottom: 1rem;
+      }
+      .contact-header p {
+        color: var(--color-text-secondary);
+        font-size: 1.1rem;
+      }
+      
+      /* Make sure input placeholder is nice */
+      ::placeholder {
+        color: rgba(0, 0, 0, 0.3);
+      }
+      
+      @media (max-width: 768px) {
+        .form-grid { grid-template-columns: 1fr; }
+        .form-container { padding: 2rem; }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/main-B6Efk2q3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-Cm-qpX4E.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- NAVIGATION -->
+      <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+          <a href="index.html" class="brand">
+            <span class="brand-euro">EURO</span>
+            <span class="brand-motors">MOTORS</span>
+          </a>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#vehicles">Vehicles</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li class="mobile-cta" style="margin-top: 1.5rem;"><a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Test Drive</a></li>
+            <li class="mobile-cta" style="margin-top: 0.75rem;"><a href="service.html" class="btn btn-outline" style="width: 100%;">Book a Service</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-primary" style="display: none;" id="nav-btn-desktop">Book Test Drive</a>
+            <a href="service.html" class="btn btn-outline" style="display: none; border-color: rgba(0,0,0,0.2); margin-left: 1rem;" id="nav-btn-service-desktop">Book a Service</a>
+            <button class="menu-toggle" id="menu-toggle">
+              <i class="ph ph-list"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact-page">
+        <div class="contact-overlay"></div>
+        <div class="container" style="position: relative; z-index: 10; width: 100%;">
+          <div class="form-container glass" data-aos="fade-up">
+            <div class="contact-header">
+              <h1 class="serif">Schedule Your <span class="text-gold">Experience</span></h1>
+              <p>Reserve a private session with our luxury vehicle suite.</p>
+            </div>
+
+            <form class="form-grid" id="bookingForm" onsubmit="event.preventDefault(); alert('Booking Requested! A luxury Concierge will contact you shortly to confirm your booking.'); window.location.href='/';">
+              <div class="form-group">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-input" required />
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-input" required />
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label">Vehicle of Interest</label>
+                <select class="form-input" required>
+                  <option value="" disabled selected>Select a vehicle...</option>
+                  <option value="jetour-dashing">JETOUR Dashing</option>
+                  <option value="jac-t9">JAC T9 Hunter</option>
+                  <option value="dongfeng-utour">Dongfeng U-Tour</option>
+                  <option value="joylong-a6">Joylong A6</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label">Preferred Date</label>
+                <!-- Hack for dark mode calendar icon on date fields is complex, just keeping standard HTML5 functionality -->
+                <input type="date" class="form-input" required />
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label">Additional Requests (Optional)</label>
+                <textarea class="form-input" rows="4" placeholder="Any specific requirements..."></textarea>
+              </div>
+
+              <div class="form-group full-width" style="margin-top: 1rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem; font-size: 1.1rem;">Request Booking</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html" class="brand text-absolute-white">
+                <span class="brand-euro">EURO</span>
+                <span class="brand-motors">MOTORS</span>
+              </a>
+              <p>Elevating the Sri Lankan automotive landscape since 2004. The exclusive home of premium vehicles.</p>
+              <div class="social-links">
+                <a href="#" class="social-link"><i class="ph ph-facebook-logo"></i></a>
+                <a href="https://www.instagram.com/euromotors__sl" target="_blank" class="social-link"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="social-link"><i class="ph ph-youtube-logo"></i></a>
+              </div>
+            </div>
+            
+            <div>
+              <h4>Vehicles</h4>
+              <ul>
+                <li><a href="index.html?brand=jetour#vehicles" class="footer-brand-link" data-brand="jetour">JETOUR</a></li>
+                <li><a href="index.html?brand=jac#vehicles" class="footer-brand-link" data-brand="jac">JAC</a></li>
+                <li><a href="index.html?brand=dongfeng#vehicles" class="footer-brand-link" data-brand="dongfeng">DONGFENG</a></li>
+                <li><a href="index.html?brand=joylong#vehicles" class="footer-brand-link" data-brand="joylong">JOYLONG</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#vehicles">Vehicles</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4>Stay Updated</h4>
+              <p class="text-silver" style="font-size: 0.9rem; margin-bottom: 1rem;">Subscribe for exclusive unveilings and private event invitations.</p>
+              <div class="newsletter-input">
+                <input type="email" placeholder="Email Address" />
+                <button type="submit"><i class="ph ph-paper-plane-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2026 Euro Motors (Pvt) Ltd. All Rights Reserved.</p>
+            <p>Design & Developed by Techhive</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script>
+      // The Navbar scroll logic might hide desktop button since scroll is 0, so we force display 
+      // but let JS do its thing too. Actually `main.js` only shows it if scrollY > 50. 
+      // Instead of changing main.js logic for other pages, we can just ensure it is visible here.
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          document.getElementById('nav-btn-desktop').style.display = 'inline-flex';
+          document.getElementById('nav-btn-service-desktop').style.display = 'inline-flex';
+        }, 100);
+        
+        // Also remove Navbar transparent state on the contact page since there's no hero taking the whole height
+        document.getElementById('navbar').classList.add('scrolled');
+      });
+    </script>
+  </body>
+</html>

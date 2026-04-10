@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Euro Motors | Ultra-Premium Automotive Experience</title>
+    <meta name="description" content="Euro Motors is the authorized distributor for JAC and JETOUR vehicles in Sri Lanka. Experience the art of driving." />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="module" crossorigin src="./assets/main-B6Efk2q3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-Cm-qpX4E.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- NAVIGATION -->
+      <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+          <a href="index.html" class="brand">
+            <span class="brand-euro">EURO</span>
+            <span class="brand-motors">MOTORS</span>
+          </a>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#vehicles">Vehicles</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li class="mobile-cta" style="margin-top: 1.5rem;"><a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Test Drive</a></li>
+            <li class="mobile-cta" style="margin-top: 0.75rem;"><a href="service.html" class="btn btn-outline" style="width: 100%;">Book a Service</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-outline" style="display: none;" id="nav-btn-desktop">Book Test Drive</a>
+            <a href="service.html" class="btn btn-outline" style="display: none; border-color: rgba(0,0,0,0.2); margin-left: 1rem;" id="nav-btn-service-desktop">Book a Service</a>
+            <button class="menu-toggle" id="menu-toggle">
+              <i class="ph ph-list"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section id="home" class="hero">
+        <div class="hero-video-container">
+          <div class="video-overlay"></div>
+          <iframe 
+            src="https://www.youtube.com/embed/iWtjo9ql6kQ?autoplay=1&mute=1&loop=1&playlist=iWtjo9ql6kQ&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="container relative z-10">
+          <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-accent-line"></div>
+            <h1>Experience the Art of <br/><span class="text-gold serif">Driving</span></h1>
+            <p class="sans-heading">Uncompromising luxury and performance. Your next chapter begins here.</p>
+            <div class="hero-ctas">
+              <a href="#vehicles" class="btn btn-outline">Explore Vehicles</a>
+              <a href="contact.html" class="btn btn-primary">Book a Test Drive</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VEHICLE SHOWCASE -->
+      <section id="vehicles" class="section-padding showcase">
+        <div class="container showcase-container">
+          <div class="text-center" data-aos="fade-up" style="text-align: center;">
+            <h2 class="text-gold" style="font-size: 2.5rem; margin-bottom: 1rem;">Our Masterpieces</h2>
+            <p class="text-silver" style="margin-bottom: 3rem;">Engineering meets art.</p>
+          </div>
+          
+          <div class="brand-tabs" data-aos="fade-up" data-aos-delay="100">
+            <button class="brand-nav-btn prev" aria-label="Previous Brand"><i class="ph ph-caret-left"></i></button>
+            <button class="brand-tab active" data-target="jetour">
+              <img src="./assets/jet-_7SWEZF8.png" alt="JETOUR" class="brand-logo" style="transform: scale(2);" />
+            </button>
+            <button class="brand-tab" data-target="jac">
+              <img src="./assets/jacl-CnuuxttV.png" alt="JAC" class="brand-logo" />
+            </button>
+            <button class="brand-tab" data-target="dongfeng">
+              <img src="./assets/dfsk-CAcdMWdk.png" alt="DONGFENG" class="brand-logo" />
+            </button>
+            <button class="brand-tab" data-target="joylong">
+              <img src="./assets/joy-BlrJn3KP.png" alt="JOYLONG" class="brand-logo" />
+            </button>
+            <button class="brand-nav-btn next" aria-label="Next Brand"><i class="ph ph-caret-right"></i></button>
+          </div>
+
+          <!-- JETOUR DISPLAY -->
+          <div class="vehicle-display active" id="jetour">
+            <div class="vehicle-img">
+               <img src="./assets/jetour(1)-DqH3tlpp.png" style="border-radius: 12px; transform: scale(1.05); filter: contrast(1.1) drop-shadow(0 20px 40px rgba(0,0,0,0.1));" alt="JETOUR Dashing" />
+            </div>
+            <div class="vehicle-info">
+              <h3>JETOUR Dashing</h3>
+              <span class="model">2026 Edition</span>
+              <p class="text-silver" style="margin-bottom: 2rem;">A striking balance of bold aesthetics and intelligent technology. The JETOUR Dashing redefines the luxury crossover.</p>
+              
+              <div class="specs-grid mono">
+                <div class="spec-item">
+                  <div class="spec-label">ENGINE</div>
+                  <div class="spec-value">1.6L TGDI</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">POWER</div>
+                  <div class="spec-value">197 HP</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">TORQUE</div>
+                  <div class="spec-value">290 Nm</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">TRANSMISSION</div>
+                  <div class="spec-value">7-Speed DCT</div>
+                </div>
+              </div>
+
+              <a href="#" class="view-details">Explore More <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- JAC DISPLAY -->
+          <div class="vehicle-display" id="jac" style="display: none;">
+            <div class="vehicle-img">
+               <img src="./assets/jac(1)-0bR-ShUK.png" style="border-radius: 12px; transform: scale(1.05); filter: contrast(1.1) drop-shadow(0 20px 40px rgba(0,0,0,0.1));" alt="JAC T9" />
+            </div>
+            <div class="vehicle-info">
+              <h3>JAC T9 Hunter</h3>
+              <span class="model">Double Cabin</span>
+              <p class="text-silver" style="margin-bottom: 2rem;">Unrelenting power fused with premium cabin comfort. Built for the ambitious who command the road.</p>
+              
+              <div class="specs-grid mono">
+                <div class="spec-item">
+                  <div class="spec-label">ENGINE</div>
+                  <div class="spec-value">2.0L CTI</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">POWER</div>
+                  <div class="spec-value">170 HP</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">TORQUE</div>
+                  <div class="spec-value">410 Nm</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">DRIVETRAIN</div>
+                  <div class="spec-value">Advanced 4x4</div>
+                </div>
+              </div>
+
+              <a href="#" class="view-details">Explore More <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- DONGFENG DISPLAY -->
+          <div class="vehicle-display" id="dongfeng" style="display: none;">
+            <div class="vehicle-img">
+               <img src="./assets/dongfeng(1)-CT1YBv39.png" style="border-radius: 12px; transform: scale(1.05); filter: contrast(1.1) drop-shadow(0 20px 40px rgba(0,0,0,0.1));" alt="Dongfeng U-Tour" />
+            </div>
+            <div class="vehicle-info">
+              <h3>Dongfeng U-Tour</h3>
+              <span class="model">Luxury MPV</span>
+              <p class="text-silver" style="margin-bottom: 2rem;">A new benchmark in executive travel. The Dongfeng U-Tour blends expansive space with sophisticated aesthetics for the ultimate passenger experience.</p>
+              
+              <div class="specs-grid mono">
+                <div class="spec-item">
+                  <div class="spec-label">ENGINE</div>
+                  <div class="spec-value">1.5L Turbo</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">POWER</div>
+                  <div class="spec-value">197 HP</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">SEATING</div>
+                  <div class="spec-value">7-Seater VIP</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">TRANSMISSION</div>
+                  <div class="spec-value">7-Speed DCT</div>
+                </div>
+              </div>
+
+              <a href="#" class="view-details">Explore More <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- JOYLONG DISPLAY -->
+          <div class="vehicle-display" id="joylong" style="display: none;">
+            <div class="vehicle-img">
+               <img src="./assets/joylong(1)-CXRFcAMT.png" style="border-radius: 12px; transform: scale(1.05); filter: contrast(1.1) drop-shadow(0 20px 40px rgba(0,0,0,0.1));" alt="Joylong" />
+            </div>
+            <div class="vehicle-info">
+              <h3>Joylong A6</h3>
+              <span class="model">Executive Commuter</span>
+              <p class="text-silver" style="margin-bottom: 2rem;">Redefining group transport with premium comfort and unparalleled reliability. The Joylong A6 ensures every journey is first-class.</p>
+              
+              <div class="specs-grid mono">
+                <div class="spec-item">
+                  <div class="spec-label">ENGINE</div>
+                  <div class="spec-value">2.8L Diesel</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">POWER</div>
+                  <div class="spec-value">148 HP</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">CAPACITY</div>
+                  <div class="spec-value">14-Seater</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">WHEELBASE</div>
+                  <div class="spec-value">Extended (3720mm)</div>
+                </div>
+              </div>
+
+              <a href="#" class="view-details">Explore More <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section-padding bg-secondary">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image" data-aos="fade-right">
+              <img src="./assets/KDG-BIP_CwbN.jpg" alt="Euro Motors Showroom Excellence" />
+              <div class="glass" style="position: absolute; bottom: 20px; right: 20px; padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255, 215, 0, 0.2); background: rgba(0, 0, 0, 0.5);">
+                <h3 class="serif text-gold" style="font-size: 1.5rem; margin-bottom: 0.2rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">KDG Global</h3>
+                <p class="mono" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.8); letter-spacing: 0.05em;">Group of Companies</p>
+              </div>
+            </div>
+            <div class="about-content" data-aos="fade-left">
+              <span class="label">EST. 2004</span>
+              <h2>Driving Excellence <br/>Since 2004</h2>
+              <p>Euro Motors is Sri Lanka's premier destination for next-generation automotive excellence. As the exclusive distributor for JAC and JETOUR, we merge cutting-edge technology with uncompromised luxury creating experiences that resonate long after the journey ends.</p>
+              
+              <div class="gold-rule"></div>
+              
+              <div class="stats-row">
+                <div class="stat-item">
+                  <h3 class="mono text-gold"><span class="counter" data-target="20">0</span>+</h3>
+                  <p class="text-silver">Years Legacy</p>
+                </div>
+                <div class="stat-item">
+                  <h3 class="mono text-gold"><span class="counter" data-target="1000">0</span>+</h3>
+                  <p class="text-silver">Vehicles Delivered</p>
+                </div>
+                <div class="stat-item">
+                  <h3 class="mono text-gold"><span class="counter" data-target="100">0</span>%</h3>
+                  <p class="text-silver">Satisfaction</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="section-padding bg-primary">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 4rem;" data-aos="fade-up">
+            <h2 class="serif">The Euro Motors Privilege</h2>
+            <p class="text-silver">More than just a drive. An elevation of lifestyle.</p>
+          </div>
+          
+          <div class="experience-grid">
+            <div class="feature-card glass" data-aos="fade-up" data-aos-delay="0">
+              <i class="ph ph-shield-check feature-icon"></i>
+              <h4>Authorized Distributor</h4>
+              <p>The sole authorized agent for JETOUR and JAC in Sri Lanka, guaranteeing authenticity and direct manufacturer support.</p>
+            </div>
+            <div class="feature-card glass" data-aos="fade-up" data-aos-delay="100">
+              <i class="ph ph-wrench feature-icon"></i>
+              <h4>Certified Service</h4>
+              <p>State-of-the-art diagnostic centers operated by factory-trained technicians to keep your vehicle pristine.</p>
+            </div>
+            <div class="feature-card glass" data-aos="fade-up" data-aos-delay="200">
+              <i class="ph ph-map-pin-line feature-icon"></i>
+              <h4>Island-Wide Network</h4>
+              <p>Comprehensive coverage across Sri Lanka, ensuring you are supported no matter where the road takes you.</p>
+            </div>
+            <div class="feature-card glass" data-aos="fade-up" data-aos-delay="300">
+              <i class="ph ph-steering-wheel feature-icon"></i>
+              <h4>Bespoke Test Drives</h4>
+              <p>Private, personalized driving sessions curated to let you fully experience the vehicle's dynamics.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section-padding bg-secondary testimonials">
+        <div class="container testimonial-container">
+          <div class="testimonial-card glass" data-aos="zoom-in">
+            <i class="ph-fill ph-quotes quote-icon"></i>
+            <p class="testimonial-quote serif">"The level of service at Euro Motors is unparalleled. Upgrading to the JETOUR Dashing was seamless, and the vehicle's tech suite feels years ahead of its class."</p>
+            <div class="testimonial-author">
+              <h4>Rajiv M.</h4>
+              <p>JETOUR Dashing Owner</p>
+              <div class="stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section id="book" class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content" data-aos="fade-up">
+          <h2 class="serif">Your Next Chapter Starts Here</h2>
+          <p>Book a private test drive at our bespoke Nugegoda showroom.</p>
+          <a href="contact.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem; display: inline-block;">Schedule Your Experience</a>
+          
+          <div class="contact-mini">
+            <a href="tel:+94112005000"><i class="ph ph-phone" style="color: var(--color-accent-gold)"></i> +94 11 200 5000</a>
+            <a href="mailto:reservations@euromotors.lk"><i class="ph ph-envelope-simple" style="color: var(--color-accent-gold)"></i> reservations@euromotors.lk</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html" class="brand text-absolute-white">
+                <span class="brand-euro">EURO</span>
+                <span class="brand-motors">MOTORS</span>
+              </a>
+              <p>Elevating the Sri Lankan automotive landscape since 2004. The exclusive home of JAC and JETOUR.</p>
+              <div class="social-links">
+                <a href="#" class="social-link"><i class="ph ph-facebook-logo"></i></a>
+                <a href="https://www.instagram.com/euromotors__sl" target="_blank" class="social-link"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="social-link"><i class="ph ph-youtube-logo"></i></a>
+              </div>
+            </div>
+            
+            <div>
+              <h4>Vehicles</h4>
+              <ul>
+                <li><a href="#vehicles" class="footer-brand-link" data-brand="jetour">JETOUR</a></li>
+                <li><a href="#vehicles" class="footer-brand-link" data-brand="jac">JAC</a></li>
+                <li><a href="#vehicles" class="footer-brand-link" data-brand="dongfeng">DONGFENG</a></li>
+                <li><a href="#vehicles" class="footer-brand-link" data-brand="joylong">JOYLONG</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#vehicles">Vehicles</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4>Stay Updated</h4>
+              <p class="text-silver" style="font-size: 0.9rem; margin-bottom: 1rem;">Subscribe for exclusive unveilings and private event invitations.</p>
+              <div class="newsletter-input">
+                <input type="email" placeholder="Email Address" />
+                <button type="submit"><i class="ph ph-paper-plane-right"></i></button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p>&copy; 2026 Euro Motors (Pvt) Ltd. All Rights Reserved.</p>
+            <p>Design & Developed by Techhive</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
